@@ -1,5 +1,5 @@
 
-public class Demonstration {
+public class Functions {
 
 	public static void main(String[] args) {
 		function1();
@@ -39,4 +39,5 @@ public class Demonstration {
 		System.out.println("function5(): First Name = " + firstName +
 				", Last Name = " + lastName);
 	}
+
 }
