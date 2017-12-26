@@ -2,8 +2,8 @@
 public class IfVsSwitch {
 
 	public static void main(String[] args) {
-		runIf1();
-		runIf2();
+//		runIf1();
+//		runIf2();
 		runSwitch();
 	}
 	
@@ -59,7 +59,7 @@ public class IfVsSwitch {
 			System.out.println("Switch: n = 3");
 		case 4:
 			System.out.println("Switch: n = 4");
-			break;
+//			break;
 		default:
 			System.out.println("Switch: n = Invalid");
 			break;
