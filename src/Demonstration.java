@@ -3,8 +3,8 @@ public class Demonstration {
 
 	public static void main(String[] args) {
 		runIf1();
-		runIf2();
-		runSwitch();
+//		runIf2();
+//		runSwitch();
 	}
 	
 	public static void runIf1() {
