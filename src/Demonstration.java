@@ -2,68 +2,41 @@
 public class Demonstration {
 
 	public static void main(String[] args) {
-		runIf1();
-//		runIf2();
-//		runSwitch();
-	}
-	
-	public static void runIf1() {
-		int n = 3;
-		if (n == 1) {
-			System.out.println("If1: n = 1");
-		} else if (n == 2) {
-			System.out.println("If1: n = 2");
-		} else if (n == 3) {
-			System.out.println("If1: n = 3");
-		} else if (n == 4) {
-			System.out.println("If1: n = 4");
-		} else {
-			System.out.println("If1: n = Invalid");
-		}
-	}
-	
-	public static void runIf2() {
-		int n = 3;
-		boolean valid = false;
-		if (n == 1) {
-			System.out.println("If2: n = 1");
-			valid = true;
-		}
-		if (n == 2) {
-			System.out.println("If2: n = 2");
-			valid = true;
-		}
-		if (n == 3) {
-			System.out.println("If2: n = 3");
-			valid = true;
-		}
-		if (n == 4) {
-			System.out.println("If2: n = 4");
-			valid = true;
-		}
-		if (!valid) {
-			System.out.println("If2: n = Invalid");
-		}
-	}
-	
-	public static void runSwitch() {
-		int n = 3;
-		switch (n) {
-		case 1:
-			System.out.println("Switch: n = 1");
-			break;
-		case 2:
-			System.out.println("Switch: n = 2");
-			break;
-		case 3:
-			System.out.println("Switch: n = 3");
-		case 4:
-			System.out.println("Switch: n = 4");
-			break;
-		default:
-			System.out.println("Switch: n = Invalid");
-			break;
-		}
+		function1();
+		function2(3);
+		int r = function3();
+		System.out.println("Return value = " + r);
+		r = function4(3);
+		System.out.println("Return value = " + r);
+		function5("Potter", "Harry");
 	}
 
+	// no parameters, no return result
+	public static void function1() {
+		System.out.println("function1(): parameters: none, return: none");
+	}
+	
+	// with parameters, no return result
+	public static void function2(int n) {
+		System.out.println("function2(): parameters: n = " + n + ", return: none");
+	}
+	
+	// no parameters, with return result
+	public static int function3() {
+		System.out.println("function1(): parameters: none, return: 0");
+		return 0;
+	}
+	
+	// with parameters, with return result
+	public static int function4(int n) {
+		int m = n*n;
+		System.out.println("function1(): parameters: n = " + n + ", return: n*n = " + m);
+		return m;
+	}
+	
+	// order of arguments example
+	public static void function5(String firstName, String lastName) {
+		System.out.println("function5(): First Name = " + firstName +
+				", Last Name = " + lastName);
+	}
 }
