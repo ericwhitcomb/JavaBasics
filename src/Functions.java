@@ -2,12 +2,17 @@
 public class Functions {
 
 	public static void main(String[] args) {
+		
 		function1();
+		
 		function2(3);
+		
 		int r = function3();
 		System.out.println("Return value = " + r);
+		
 		r = function4(3);
 		System.out.println("Return value = " + r);
+		
 		function5("Potter", "Harry");
 	}
 
